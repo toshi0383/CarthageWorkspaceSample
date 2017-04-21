@@ -1,0 +1,10 @@
+framework module SampleLibrary {
+  umbrella header "SampleLibrary.h"
+
+  export *
+  module * { export * }
+}
+
+module SampleLibrary.Swift {
+    header "SampleLibrary-Swift.h"
+}

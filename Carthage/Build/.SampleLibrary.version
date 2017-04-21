@@ -1,0 +1,10 @@
+{
+  "xcodeVersion" : "Xcode 8.2.1\nBuild version 8C1002",
+  "commitish" : "1.0.0",
+  "iOS" : [
+    {
+      "hash" : "b530c4a0de7530ab43e0a3cb9356060c0cc550a1743de94b413cc714e594b08f",
+      "name" : "SampleLibrary"
+    }
+  ]
+}

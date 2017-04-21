@@ -12,6 +12,7 @@
 		F2327CC11EA989F60052F80B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2327CBF1EA989F60052F80B /* Main.storyboard */; };
 		F2327CC31EA989F60052F80B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2327CC21EA989F60052F80B /* Assets.xcassets */; };
 		F2327CC61EA989F60052F80B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2327CC41EA989F60052F80B /* LaunchScreen.storyboard */; };
+		F256678F1EA9AE8600D34E56 /* SampleLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F256678E1EA9AE8600D34E56 /* SampleLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F2327CC21EA989F60052F80B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2327CC51EA989F60052F80B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2327CC71EA989F60052F80B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F256678E1EA9AE8600D34E56 /* SampleLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SampleLibrary.framework; path = Carthage/Build/iOS/SampleLibrary.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F256678F1EA9AE8600D34E56 /* SampleLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +57,7 @@
 		F2327CBA1EA989F60052F80B /* CarthageWorkspaceSample */ = {
 			isa = PBXGroup;
 			children = (
+				F256678E1EA9AE8600D34E56 /* SampleLibrary.framework */,
 				F2327CBB1EA989F60052F80B /* AppDelegate.swift */,
 				F2327CBD1EA989F60052F80B /* ViewController.swift */,
 				F2327CBF1EA989F60052F80B /* Main.storyboard */,
@@ -74,6 +78,7 @@
 				F2327CB41EA989F60052F80B /* Sources */,
 				F2327CB51EA989F60052F80B /* Frameworks */,
 				F2327CB61EA989F60052F80B /* Resources */,
+				F23397481EA9AEED00B78298 /* carthage copy-frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +135,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F23397481EA9AEED00B78298 /* carthage copy-frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SampleLibrary.framework",
+			);
+			name = "carthage copy-frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F2327CB41EA989F60052F80B /* Sources */ = {
@@ -260,6 +283,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CarthageWorkspaceSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.toshi0383.CarthageWorkspaceSample;
@@ -272,6 +299,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CarthageWorkspaceSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.toshi0383.CarthageWorkspaceSample;
@@ -299,6 +330,7 @@
 				F2327CCC1EA989F60052F80B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
