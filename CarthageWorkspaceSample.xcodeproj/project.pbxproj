@@ -12,7 +12,34 @@
 		F2327CC11EA989F60052F80B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2327CBF1EA989F60052F80B /* Main.storyboard */; };
 		F2327CC31EA989F60052F80B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2327CC21EA989F60052F80B /* Assets.xcassets */; };
 		F2327CC61EA989F60052F80B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2327CC41EA989F60052F80B /* LaunchScreen.storyboard */; };
+		F2327CD61EA98AAB0052F80B /* SampleLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = F2327CD41EA98AAB0052F80B /* SampleLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2327CD91EA98AAB0052F80B /* SampleLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2327CD21EA98AAB0052F80B /* SampleLibrary.framework */; };
+		F2327CDA1EA98AAB0052F80B /* SampleLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2327CD21EA98AAB0052F80B /* SampleLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2327CD71EA98AAB0052F80B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2327CB01EA989F60052F80B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2327CD11EA98AAB0052F80B;
+			remoteInfo = SampleLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F2327CDE1EA98AAB0052F80B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F2327CDA1EA98AAB0052F80B /* SampleLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F2327CB81EA989F60052F80B /* CarthageWorkspaceSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarthageWorkspaceSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +49,21 @@
 		F2327CC21EA989F60052F80B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2327CC51EA989F60052F80B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2327CC71EA989F60052F80B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2327CD21EA98AAB0052F80B /* SampleLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SampleLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2327CD41EA98AAB0052F80B /* SampleLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleLibrary.h; sourceTree = "<group>"; };
+		F2327CD51EA98AAB0052F80B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F2327CB51EA989F60052F80B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2327CD91EA98AAB0052F80B /* SampleLibrary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2327CCE1EA98AAB0052F80B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				F2327CBA1EA989F60052F80B /* CarthageWorkspaceSample */,
+				F2327CD31EA98AAB0052F80B /* SampleLibrary */,
 				F2327CB91EA989F60052F80B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				F2327CB81EA989F60052F80B /* CarthageWorkspaceSample.app */,
+				F2327CD21EA98AAB0052F80B /* SampleLibrary.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,7 +104,27 @@
 			path = CarthageWorkspaceSample;
 			sourceTree = "<group>";
 		};
+		F2327CD31EA98AAB0052F80B /* SampleLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				F2327CD41EA98AAB0052F80B /* SampleLibrary.h */,
+				F2327CD51EA98AAB0052F80B /* Info.plist */,
+			);
+			path = SampleLibrary;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F2327CCF1EA98AAB0052F80B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2327CD61EA98AAB0052F80B /* SampleLibrary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		F2327CB71EA989F60052F80B /* CarthageWorkspaceSample */ = {
@@ -74,15 +134,35 @@
 				F2327CB41EA989F60052F80B /* Sources */,
 				F2327CB51EA989F60052F80B /* Frameworks */,
 				F2327CB61EA989F60052F80B /* Resources */,
+				F2327CDE1EA98AAB0052F80B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F2327CD81EA98AAB0052F80B /* PBXTargetDependency */,
 			);
 			name = CarthageWorkspaceSample;
 			productName = CarthageWorkspaceSample;
 			productReference = F2327CB81EA989F60052F80B /* CarthageWorkspaceSample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F2327CD11EA98AAB0052F80B /* SampleLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2327CDB1EA98AAB0052F80B /* Build configuration list for PBXNativeTarget "SampleLibrary" */;
+			buildPhases = (
+				F2327CCD1EA98AAB0052F80B /* Sources */,
+				F2327CCE1EA98AAB0052F80B /* Frameworks */,
+				F2327CCF1EA98AAB0052F80B /* Headers */,
+				F2327CD01EA98AAB0052F80B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleLibrary;
+			productName = SampleLibrary;
+			productReference = F2327CD21EA98AAB0052F80B /* SampleLibrary.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +175,10 @@
 				ORGANIZATIONNAME = "Toshihiro Suzuki";
 				TargetAttributes = {
 					F2327CB71EA989F60052F80B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					F2327CD11EA98AAB0052F80B = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				F2327CB71EA989F60052F80B /* CarthageWorkspaceSample */,
+				F2327CD11EA98AAB0052F80B /* SampleLibrary */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +214,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F2327CD01EA98AAB0052F80B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +233,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F2327CCD1EA98AAB0052F80B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2327CD81EA98AAB0052F80B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2327CD11EA98AAB0052F80B /* SampleLibrary */;
+			targetProxy = F2327CD71EA98AAB0052F80B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F2327CBF1EA989F60052F80B /* Main.storyboard */ = {
@@ -280,6 +387,48 @@
 			};
 			name = Release;
 		};
+		F2327CDC1EA98AAB0052F80B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SampleLibrary/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.toshi0383.SampleLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F2327CDD1EA98AAB0052F80B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SampleLibrary/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.toshi0383.SampleLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -297,6 +446,14 @@
 			buildConfigurations = (
 				F2327CCB1EA989F60052F80B /* Debug */,
 				F2327CCC1EA989F60052F80B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F2327CDB1EA98AAB0052F80B /* Build configuration list for PBXNativeTarget "SampleLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2327CDC1EA98AAB0052F80B /* Debug */,
+				F2327CDD1EA98AAB0052F80B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
