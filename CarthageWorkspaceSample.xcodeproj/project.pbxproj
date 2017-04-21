@@ -15,6 +15,7 @@
 		F2327CD61EA98AAB0052F80B /* SampleLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = F2327CD41EA98AAB0052F80B /* SampleLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2327CD91EA98AAB0052F80B /* SampleLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2327CD21EA98AAB0052F80B /* SampleLibrary.framework */; };
 		F2327CDA1EA98AAB0052F80B /* SampleLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2327CD21EA98AAB0052F80B /* SampleLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2327CE01EA98B470052F80B /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2327CDF1EA98B470052F80B /* Sample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		F2327CD21EA98AAB0052F80B /* SampleLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SampleLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2327CD41EA98AAB0052F80B /* SampleLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleLibrary.h; sourceTree = "<group>"; };
 		F2327CD51EA98AAB0052F80B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2327CDF1EA98B470052F80B /* Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				F2327CD41EA98AAB0052F80B /* SampleLibrary.h */,
 				F2327CD51EA98AAB0052F80B /* Info.plist */,
+				F2327CDF1EA98B470052F80B /* Sample.swift */,
 			);
 			path = SampleLibrary;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 					};
 					F2327CD11EA98AAB0052F80B = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -237,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2327CE01EA98B470052F80B /* Sample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +371,7 @@
 		F2327CCB1EA989F60052F80B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CarthageWorkspaceSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -378,6 +384,7 @@
 		F2327CCC1EA989F60052F80B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CarthageWorkspaceSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -390,6 +397,7 @@
 		F2327CDC1EA98AAB0052F80B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -402,6 +410,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.toshi0383.SampleLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -411,6 +420,7 @@
 		F2327CDD1EA98AAB0052F80B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
